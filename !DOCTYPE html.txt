@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biztosítási Megoldások - MetLife</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Biztonság Önnek és Szeretteinek</h1>
+        <p>Testre szabott biztosítási megoldások</p>
+    </header>
+    
+    <div class="container">
+        <a href="#contact" class="cta-button" id="consultButton">Ingyenes konzultáció kérése</a>
+        
+        <div class="services">
+            <div class="service">
+                <h2>Egészségbiztosítás</h2>
+                <p>Anyagi biztonság váratlan egészségügyi helyzetek esetén.</p>
+                <button class="interest-button" data-insurance="Egészségbiztosítás">Érdekel</button>
+            </div>
+            <div class="service">
+                <h2>Balesetbiztosítás</h2>
+                <p>Pénzügyi védelem balesetek és sérülések esetére.</p>
+                <button class="interest-button" data-insurance="Balesetbiztosítás">Érdekel</button>
+            </div>
+            <div class="service">
+                <h2>Nyugdíjbiztosítás</h2>
+                <p>Gondtalan jövő, biztos anyagi háttér a nyugdíjas évekre.</p>
+                <button class="interest-button" data-insurance="Nyugdíjbiztosítás">Érdekel</button>
+            </div>
+        </div>
+        
+        <div id="contact" class="contact-form">
+            <h2>Kérjen visszahívást</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Név" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="tel" name="phone" placeholder="Telefonszám" required>
+                <textarea id="message" name="message" placeholder="Milyen biztosítás érdekli?" rows="4"></textarea>
+                <button type="submit">Küldés</button>
+                <p class="success-message" id="successMessage">Köszönjük! Hamarosan felvesszük Önnel a kapcsolatot.</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
